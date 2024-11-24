@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Manager</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+</head>  
+<body class="bg-gray-100 flex items-center justify-center h-screen px-4">  
+  <div class="bg-white shadow-lg rounded-lg p-6 w-full max-w-md">  
+    <h1 class="text-2xl font-bold mb-4">Contact Manager</h1>  
+
+    <div id="contact-form" class="space-y-4">  
+      <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Name" required>  
+      <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Phone" required>  
+      <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Email" required>  
+      <input type="text" id="address" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Address" required>  
+    </div>
+
+    <div class="mt-4 flex justify-end">
+      <button id="add-contact-btn" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg">Add Contact</button>
+    </div>
+
+    <div id="contact-list" class="mt-8 space-y-4">
+      <!-- Contact cards will be added here dynamically -->  
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
